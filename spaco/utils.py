@@ -452,7 +452,7 @@ def extract_palette(
                     lab_color=lab_color_set[idx],
                     color_count=bin_color_count[idx],
                     palette=palette[np.arange(n_colors) != j],
-                    wn=reference_image.size[0] * reference_image.size[1] * 0.0003,
+                    wn=reference_image.shape[0] * reference_image.shape[1] * 0.0003,
                 )
             palette[j] = lab_color_set[sample_index[sample_score.argmax()]]
 
